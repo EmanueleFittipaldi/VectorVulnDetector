@@ -19,6 +19,6 @@ This project is OpenSource
 
 ## Contact
 
-If you have any questions or issues with the project, please feel free to open an issue on GitHub or contact us at [your email].
+If you have any questions or issues with the project, please feel free to open an issue on GitHub 
 
 Thank you for using EmbedVulnScan!

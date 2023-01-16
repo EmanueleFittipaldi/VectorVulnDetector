@@ -3,7 +3,7 @@ Welcome to the VectorVulnDetector GitHub repository!
 
 This project aims to analyze if a code contains a specific vulnerability by converting it into a word embedding vector and evaluating its cosine similarity with another word embedding vector containing a known vulnerability. This process allows us to obtain a measure of probability on what percentage we are confident that the code analyzed contains a vulnerability.
 
-The project is implemented in Python, and we use CodeBERT and Code2Vec for generating the word embedding vectors. We also use metrics.pairwise.cosine_similarity of scikit-learn for calculating the cosine similarity.
+The project is implemented in Python, and we use Code2Vec for generating the code embedding vectors. 
 
 ## Getting Started
 
@@ -21,4 +21,4 @@ This project is OpenSource
 
 If you have any questions or issues with the project, please feel free to open an issue on GitHub 
 
-Thank you for using EmbedVulnScan!
+Thank you for using VectorVulnScan!

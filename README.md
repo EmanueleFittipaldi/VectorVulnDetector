@@ -7,7 +7,7 @@ The project is implemented in Python, and we use Code2Vec for generating the cod
 
 ## Getting Started
 
-To get started with the project, you will need to have Python and scikit-learn installed on your machine. Once you have the necessary dependencies, you can clone the repository and start experimenting with the code.
+To get started with the project, you will need to have Python and numpy installed on your machine. Once you have the necessary dependencies, you can clone the repository and start experimenting with the code.
 
 ## Contributing
 

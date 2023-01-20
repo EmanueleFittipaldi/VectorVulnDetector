@@ -1,9 +1,11 @@
 import os
-
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 import numpy as np
 from matplotlib import pyplot as plt
+from keras.models import Sequential
+from keras.layers import Dense
+
 
 
 def cosineSimilarity(v1, v2):
@@ -28,6 +30,19 @@ def applyPCA(n_components, vectors, n_clusters):
     plt.scatter(code_vectors_2d[:, 0], code_vectors_2d[:, 1], c=kmeans.labels_, s=0.7)
     plt.show()
 
+def trainNeuralNetwork(X_train,y_train):
+    # create the model
+    model = Sequential()
+    model.add(Dense(64, input_dim=384, activation='relu'))
+    model.add(Dense(32, activation='relu'))
+    model.add(Dense(112, activation='softmax'))
+
+    # compile the model
+    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+    # train the model
+    model.fit(X_train, y_train, epochs=10, batch_size=32)
+    model.save('trained_neural_netowrk_JULIET.h5')
 
 vettori = []
 folder_path = 'JULIET_Code_Vectors'
@@ -38,5 +53,5 @@ for filename in os.listdir(folder_path):
         data = np.load(file_path)
         vettori.extend(data)
 
-print(len(vettori))
-applyPCA(n_components=2, n_clusters=3, vectors=vettori)
+
+

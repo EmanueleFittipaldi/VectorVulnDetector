@@ -74,7 +74,6 @@ def trainNeuralNetwork(X_train, y_train, X_test, y_test, num_classes, input_dim)
         #    pickle.dump(model, f)
         #return model
 
-
 # -------------------------------------------------------------------------------------------------------------
 # 535 -> 209
 # 600 -> 248

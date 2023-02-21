@@ -122,6 +122,7 @@ y_train = kmeans.predict(temp)
 
 
 
+
 # obtaining the labels (clusters) for the vectors in X_test
 temp = X_test
 X_test = np.matrix(X_test)
